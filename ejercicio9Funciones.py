@@ -20,7 +20,6 @@ def calcularSegundos(horas, minutos, segundos):
     return segundos
 
 # @brief Programa principal: calculo de la cantidad de segundos en un tiempo ingresado por el usuario.
-# @return 0 si el programa se ejecuto correctamente.
 
 horas = int(input("Ingrese la cantidad de horas: "))
 minutos = int(input("Ingrese la cantidad de minutos: "))
