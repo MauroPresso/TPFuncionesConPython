@@ -6,22 +6,65 @@
 import os
 os.system("cls")
 
+"""
+ @brief Función que permite calcular el importe de un producto
+
+ @param cantidad: Cantidad de productos
+ @param precio: Precio del producto
+
+ @return importe del producto
+"""
 def calcularImporteProducto(cantidad, precio):
     importe = cantidad * precio
     return importe
 
+"""
+ @brief Función que permite calcular el IVA del producto
+
+ @param importe: importe del producto
+
+ @return IVA del producto
+"""
 def calcularIVAdel21porCiento(totalImporte):
     IVA = totalImporte * 0.21
     return IVA
 
+"""
+ @brief Función que permite calcular el descuento del producto
+
+ @param importe importe del producto
+
+ @return descuento del producto
+"""
 def calcularDescuentoDel5porCiento(importe):
     descuento = importe * 0.05
     return descuento
 
+"""
+ @brief Función que permite calcular el total del producto
+
+ @param importe: importe del producto
+ @param IVA: IVA del producto
+ @param descuento: descuento del producto
+
+ @return total del producto
+"""
 def calcularTotal(importe, IVA, descuento):
     total = importe + IVA - descuento
     return total
 
+"""
+ @brief Función que permite mostrar el total del producto
+
+ @param apellido: Apellido del cliente
+ @param DNI: DNI del cliente
+ @param importe: importe del producto
+ @param IVA: IVA del producto
+ @param descuento: descuento del producto
+ @param total: total del producto
+
+ @return None
+"""
 def mostrarFactura(apellido, DNI, importe, IVA, descuento, total):
     print("\n------------Factura del cliente------------")
     print("Apellido:", apellido)
